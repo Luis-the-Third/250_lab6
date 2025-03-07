@@ -36,7 +36,7 @@ while True:
       string = "D: " + str(distance) + "cm  NO OBJ\nT: " + str(threshold) + "cm"
 
 
-    time.sleep(1)
+    time.sleep(0.1)
     setText(string)
 
 
