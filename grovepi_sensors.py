@@ -29,14 +29,15 @@ while True:
     
     if(distance > threshold):
       setRGB(255, 0, 0)
-      string = "D: " + str(distance) + "cm  OBJ\nT: " + str(threshold) + "cm"
+      string = str(distance) + "cm  OBJ PRES\n" + str(threshold) + "cm"
 
     else:
       setRGB(0, 255, 0)
-      string = "D: " + str(distance) + "cm  NONE\nT: " + str(threshold) + "cm"
+      string = str(distance) + "cm  NO OBJ\n" + str(threshold) + "cm"
 
 
     time.sleep(0.1)
+
     setText(string)
 
 
