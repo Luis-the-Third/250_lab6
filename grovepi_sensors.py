@@ -33,7 +33,7 @@ while True:
 
     else:
       setRGB(0, 255, 0)
-      string = "D: " + str(distance) + "cm  NO OBJ\nT: " + str(threshold) + "cm"
+      string = "D: " + str(distance) + "cm  NONE\nT: " + str(threshold) + "cm"
 
 
     time.sleep(0.1)
