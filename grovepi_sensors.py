@@ -17,19 +17,23 @@ while True:
   try:
     # TODO:read distance value from Ultrasonic Ranger and print distance on LCD
     distance = grovepi.ultrasonicRead(ultrasonic_ranger)
-    setText("Distance: " + str(distance) + "cm")
+    setCursor(0, 0)
+    setText("D: " + str(distance) + "cm")
 
 
     # TODO: read threshold from potentiometer
     threshold = grovepi.analogRead(potentiometer)
-    setText("Threshold: " + str(threshold) + "cm")
+    setCursor(0, 1)
+    setText("T: " + str(threshold) + "cm")
 
     # TODO: format LCD text according to threshold
     if(distance > threshold):
       setRGB(255, 0, 0)
+      setCursor(10, 0)
       setText("OBJ PRES")
     else:
       setRGB(0, 255, 0)
+      setCursor(10, 0)
       setText("No obj pres")
 
 
